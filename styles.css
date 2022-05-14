@@ -1,0 +1,300 @@
+@font-face
+{
+    font-family:"Typold W05 Book_500";
+    src:url("Fonts/5546748/66ee67ba-68c9-4399-997e-5bd92fce4a08.woff2") format("woff2"),url("Fonts/5546748/21bb88ee-cb31-43dc-89c5-44a105248283.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'VenturisADF-Bold';
+    src:url('Fonts/VenturisADF/VenturisADF-Bold.ttf.woff') format('woff'),
+        url('Fonts/VenturisADF/VenturisADF-Bold.ttf.svg#VenturisADF-Bold') format('svg'),
+        url('Fonts/VenturisADF/VenturisADF-Bold.ttf.eot'),
+        url('Fonts/VenturisADF/VenturisADF-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family:"Novecento Sans W01 Wd Normal";
+    src:url("Fonts/1285129/4a05ecca-cf4c-4546-8800-0084d007bc9f.woff2") format("woff2"),url("Fonts/1285129/2b3505cb-fa71-4717-9a25-734c3e5e2481.woff") format("woff");
+}
+
+@font-face{ 
+	font-family: 'Playfair Display Italic';
+	src: url('Fonts/Playfair_Display/playfairdisplay-italic-variablefont_wght-webfont.eot');
+	src: url('Fonts/Playfair_Display/playfairdisplay-italic-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('Fonts/Playfair_Display/playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff'),
+	     url('Fonts/Playfair_Display/playfairdisplay-italic-variablefont_wght-webfont.ttf') format('truetype'),
+	     url('Fonts/Playfair_Display/playfairdisplay-italic-variablefont_wght-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Playfair Display';
+	src: url('Fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.eot');
+	src: url('Fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('Fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff') format('woff'),
+	     url('Fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.ttf') format('truetype'),
+	     url('Fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.svg#webfont') format('svg');
+}
+
+/* which page are we in? */
+/* h1 {    
+    font-size: 16px;
+    color: red;
+    text-align: center;
+} */
+
+/* Headers format */
+#headers
+{
+    font-family: 'Typold W05 Book_500';
+    color:black;
+    background-color: white;
+    margin-top: 40px;
+    max-width: 50%;
+    text-align: center;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Subheaders format */
+#subheaders
+{
+    font-family: 'Volkhov', serif;
+}
+
+.company_title {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4%;
+}
+
+span.bracket {
+    font-family: 'Typold W05 Book_500';
+    color:red;
+    background-color: white;
+    margin-top: 40px;
+    max-width: 50%;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#office_map
+{
+    text-align: center;
+    margin-left: 35%;
+    width: 500px;
+    height: 268px;
+}
+
+.cleaner_checklist {
+    text-align: center;
+    display: block;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.cleaner_rooms {
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: red;
+}
+
+.cleaner_button_section {
+    text-align: center;
+    display: block;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.cleaner_button {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 50px;
+    background-color: white;
+    color: red;
+}
+
+.cleaner_button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    border-style: solid;
+    background-color: gray;
+    padding: 5px;
+}
+
+.worker_container {
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.restock_row {
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.task_row {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#task_urgency {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+#restock_urgency {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+#room_list {
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+#restock_list {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+#task_list {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+h1.worker_header {
+    text-align: center;
+}
+
+h1.request_text {
+    text-align:center;
+}
+
+button.request_button {
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-width: 3px;
+}
+
+button.request_button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.main_content {
+    text-align: center;
+}
+
+.cleaner_content {
+    text-align: center;
+}
+
+.cleaners_view {
+    text-align: center;
+}
+
+.send_cleaner {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#select_worker {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#room_ddm {
+    margin: 10px;
+    margin-left: 2px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}

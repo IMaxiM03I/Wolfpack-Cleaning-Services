@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <title> Worker </title>
+    <link href="styles.css" rel = "stylesheet">
+    <script src="backend.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class = "company_title">
+        <h1>WOLFPACK CLEANING SERVICES</h1>
+    </div>
+
+    <h1 id = "headers"><span class = "bracket">/ </span>Office Worker</h1>
+    
+    <div id = "office_map">
+        <img src = "map.png" alt = "Map of the Office">
+    </div>
+
+    <div class="worker_container">
+        <label><span class = "bracket">/ </span>Select Room :</label>
+        <select type="text" id="room_list">
+            <option value = "0">MR</option>
+            <option value = "1">KI</option>
+            <option value = "2">O1</option>
+            <option value = "3">O2</option>
+            <option value = "4">O3</option>
+            <option value = "5">O4</option>
+        </select>
+
+        <div class="task_row">
+            <label><span class = "bracket">/ </span>Select Cleaning Service :</label>
+            <select type="text" id="task_list">
+                <option value="0">None</option>
+                <option value="1">Clean my spill</option>
+                <option value="2">Clean my work station</option>
+                <option value="3">Change the temperature it's too cold</option>
+                <option value="4">Change the temperature it's too hot</option>
+            </select>
+            
+            <select type="task_urgency" id="task_urgency">
+                <option value="1">Priority 1</option>
+                <option value="2">Priority 2</option>
+                <option value="3">Priority 3</option>
+            </select>
+    
+        </div>
+
+        <div class="restock_row">
+            <label><span class = "bracket">/ </span>Select Restock Service :</label>
+            <select type="text" id="restock_list">
+                <option value="0">None</option>
+                <option value="1">Bananas</option>
+                <option value="2">Apple</option>
+                <option value="3">Grapes</option>
+                <option value="4">Coffee</option>
+                <option value="5">Milk</option>
+                <option value="6">Granola bars</option>
+            </select>
+            
+            <select type="text" id="restock_urgency">
+                <option value="1">Priority 1</option>
+                <option value="2">Priority 2</option>
+                <option value="3">Priority 3</option>
+            </select>
+        </div>
+        
+        <h1 id = "request_status" class = "request_text"></h1>    
+        <button onclick="make_request()" class="request_button" id = "send_request">Request Service</button>
+    
+    </div>
+    
+    <script>
+        function make_request() {
+            var room_select = document.getElementById("room_list");
+            var task_select = document.getElementById("task_list");
+            var task_urgency_select = document.getElementById("task_urgency");
+            var restock_select = document.getElementById("restock_list");
+            var restock_urgency_select = document.getElementById("restock_urgency");
+        
+            sessionStorage.setItem("room_select", room_select.value);
+            sessionStorage.setItem("task_select", task_select.value);
+            sessionStorage.setItem("task_urgency_select", task_urgency_select.value - 1);
+            sessionStorage.setItem("restock_select", restock_select.value);
+            sessionStorage.setItem("restock_urgency_select", restock_urgency_select.value - 1);  
+
+            document.getElementById("request_status").innerHTML = "Request Sent!";
+        }
+    </script>
+
+</body>
+</html>

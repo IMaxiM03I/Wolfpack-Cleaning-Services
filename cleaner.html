@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <title> WCS </title>
+    <link href="styles.css" rel = "stylesheet">
+    <script src="backend.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class = "company_title">
+        <h1>WOLFPACK CLEANING SERVICES</h1>
+    </div>
+    
+    <h1 id = "headers"><span class = "bracket">/ </span>Cleaner</h1>
+    
+    <div id = "office_map">
+        <img src = "map.png" alt = "Map of the Office">
+    </div>
+
+    <div class = "cleaner_checklist">
+        <label>Select Room : </label>
+        <select class = "cleaner_rooms" id = "room">
+            <option value = "0">MR</option>
+            <option value = "1">KI</option>
+            <option value = "2">O1</option>
+            <option value = "3">O2</option>
+            <option value = "4">O3</option>
+            <option value = "5">O4</option>
+        </select>
+    </div>
+
+    <div class="cleaner_button_section">
+        <button class = "cleaner_button" type = "button" onclick="change_room()">Enter Room</button>
+        <button class = "cleaner_button" type = "button">Check as Clean</button>
+    </div>
+
+</body>
+</html>
